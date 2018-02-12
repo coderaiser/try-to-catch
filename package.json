@@ -17,7 +17,7 @@
     "report": "nyc report --reporter=text-lcov | coveralls",
     "build": "babel lib -d legacy",
     "wisdom": "redrun build legacy",
-    "legacy": "echo \"require('./try-to-catch')\"> legacy/index.js"
+    "legacy": "echo \"require('./try-to-catch')\" > legacy/index.js"
   },
   "dependencies": {},
   "keywords": [
