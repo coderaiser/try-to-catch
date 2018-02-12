@@ -60,6 +60,10 @@ In old `node.js` environments that not fully supports `es2015`, `try-to-catch` c
 var tryToCatch = require('try-to-catch/legacy');
 ```
 
+## Related
+
+- [try-catch](https://github.com/coderaiser/try-catch "TryCatch") - functional try-catch wrapper.
+
 ## License
 
 MIT
