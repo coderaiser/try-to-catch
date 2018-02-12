@@ -1,0 +1,19 @@
+{
+    "env": {
+        "es6": true,
+        "node": true,
+        "browser": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 2017,
+        "sourceType": "module"
+    },
+    "rules": {
+        "indent": ["error", 4],
+        "semi": "error",
+        "no-use-before-define": ["error", "nofunc"]
+    },
+    "extends": [
+        "eslint:recommended"
+    ]
+}
