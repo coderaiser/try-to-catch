@@ -28,7 +28,8 @@
     "promise",
     "async",
     "await",
-    "try-catch"
+    "try-catch",
+    "then"
   ],
   "devDependencies": {
     "babel-cli": "^6.26.0",
