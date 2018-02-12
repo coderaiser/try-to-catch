@@ -30,7 +30,7 @@ Wrap function to `await try-catch block` resolve `[error, result]`;
 
 ```js
 const fs = require('fs');
-const tryCatch = require('.');
+const tryToCatch = require('try-to-catch');
 const {promisify} = require('util');
 const readFile = promisify(fs.readFile);
 const readDir = promisify(fs.readdir);
@@ -40,7 +40,7 @@ read(process.argv[2])
     .catch(console.error);
 
 async function read(path) {
-    const [error, data] = await tryCatch(readFile, path, 'utf8');
+    const [error, data] = await tryToCatch(readFile, path, 'utf8');
     
     if (!error)
         return data;
