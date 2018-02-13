@@ -22,7 +22,7 @@ npm i try-to-catch
 
 ## API
 
-### tryToCatch(fn, [arg1, arg2, ..., argN])
+### tryToCatch(fn, [...args])
 
 Wrap function to `await try-catch block` resolve `[error, result]`;
 
