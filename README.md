@@ -24,7 +24,7 @@ npm i try-to-catch
 
 ### tryToCatch(fn, [...args])
 
-Wrap function to `await try-catch block` resolve `[error, result]`;
+Wrap function to avoid `try-catch` block, resolves `[error, result]`;
 
 ### Example
 
