@@ -1,13 +1,11 @@
-# Try to Catch [![License][LicenseIMGURL]][LicenseURL] [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][DependencyStatusIMGURL]][DependencyStatusURL] [![Build Status][BuildStatusIMGURL]][BuildStatusURL] [![Coverage Status][CoverageIMGURL]][CoverageURL]
+# Try to Catch [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][DependencyStatusIMGURL]][DependencyStatusURL] [![Build Status][BuildStatusIMGURL]][BuildStatusURL] [![Coverage Status][CoverageIMGURL]][CoverageURL]
 
 [NPMIMGURL]:                https://img.shields.io/npm/v/try-to-catch.svg?style=flat
 [BuildStatusIMGURL]:        https://img.shields.io/travis/coderaiser/try-to-catch/master.svg?style=flat
 [DependencyStatusIMGURL]:   https://img.shields.io/david/coderaiser/try-to-catch.svg?style=flat
-[LicenseIMGURL]:            https://img.shields.io/badge/license-MIT-317BF9.svg?style=flat
 [NPMURL]:                   https://npmjs.org/package/try-to-catch "npm"
 [BuildStatusURL]:           https://travis-ci.org/coderaiser/try-to-catch  "Build Status"
 [DependencyStatusURL]:      https://david-dm.org/coderaiser/try-to-catch "Dependency Status"
-[LicenseURL]:               https://tldrlegal.com/license/mit-license "MIT License"
 
 [CoverageURL]:              https://coveralls.io/github/coderaiser/try-to-catch?branch=master
 [CoverageIMGURL]:           https://coveralls.io/repos/coderaiser/try-to-catch/badge.svg?branch=master&service=github
