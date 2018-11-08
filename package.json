@@ -1,6 +1,6 @@
 {
   "name": "try-to-catch",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "author": "coderaiser <mnemonic.enemy@gmail.com> (https://github.com/coderaiser)",
   "description": "function try-catch wrapper for promises",
   "homepage": "http://github.com/coderaiser/try-to-catch",
@@ -19,8 +19,7 @@
     "wisdom": "redrun build legacy",
     "legacy": "echo \"module.exports = require('./try-to-catch')\" > legacy/index.js"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "keywords": [
     "try",
     "catch",
