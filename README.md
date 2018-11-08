@@ -26,6 +26,26 @@ Wrap function to avoid `try-catch` block, resolves `[error, result]`;
 
 ### Example
 
+Simplest example with `async-await`:
+
+```js
+const tryToCatch = require('try-to-catch');
+await tryToCatch(Promise.reject('hi'));
+// returns
+[ Error: hi]
+```
+
+Can be used with functions:
+
+```js
+const tryToCatch = require('try-to-catch');
+await tryToCatch(() => 5);
+// returns
+[null, 5]
+```
+
+Advanced example:
+
 ```js
 const fs = require('fs');
 const tryToCatch = require('try-to-catch');
@@ -60,7 +80,7 @@ var tryToCatch = require('try-to-catch/legacy');
 
 ## Related
 
-- [try-catch](https://github.com/coderaiser/try-catch "TryCatch") - functional try-catch wrapper.
+- [try-catch](https://github.com/coderaiser/try-catch "try-catch") - functional try-catch wrapper.
 
 ## License
 

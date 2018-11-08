@@ -19,7 +19,9 @@
     "wisdom": "redrun build legacy",
     "legacy": "echo \"module.exports = require('./try-to-catch')\" > legacy/index.js"
   },
-  "dependencies": {},
+  "dependencies": {
+    "wraptile": "^2.0.0"
+  },
   "keywords": [
     "try",
     "catch",
