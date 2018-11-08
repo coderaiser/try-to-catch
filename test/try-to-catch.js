@@ -1,6 +1,8 @@
 'use strict';
 
-const test = require('tape');
+const {promisify} = require('util');
+const tryToTape = require('try-to-tape');
+const test = tryToTape(require('tape'));
 const tryToCatch = require('..');
 
 test('try-to-catch: no args', (t) => {
@@ -55,6 +57,14 @@ test('try-to-catch: resolves: not promise', async (t) => {
     const [, data] = await tryToCatch(fn);
     
     t.equal(data, 5, 'should not be error');
+    t.end();
+});
+
+test('try-to-catch: resolves: promisify', async (t) => {
+    const fn = promisify((a, b, fn) => fn(null, a + b));
+    const [, data] = await tryToCatch(fn, 1, 2);
+    
+    t.equal(data, 3, 'should not be error');
     t.end();
 });
 

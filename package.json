@@ -20,7 +20,6 @@
     "legacy": "echo \"module.exports = require('./try-to-catch')\" > legacy/index.js"
   },
   "dependencies": {
-    "wraptile": "^2.0.0"
   },
   "keywords": [
     "try",
@@ -41,7 +40,8 @@
     "nodemon": "^1.14.12",
     "nyc": "^13.0.1",
     "redrun": "^7.0.2",
-    "tape": "^4.8.0"
+    "tape": "^4.8.0",
+    "try-to-tape": "^1.0.0"
   },
   "license": "MIT"
 }
