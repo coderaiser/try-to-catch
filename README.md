@@ -30,7 +30,8 @@ Simplest example with `async-await`:
 
 ```js
 const tryToCatch = require('try-to-catch');
-await tryToCatch(Promise.reject('hi'));
+const reject = Promise.reject.bind(Promise);
+await tryToCatch(reject, 'hi');
 // returns
 [ Error: hi]
 ```
