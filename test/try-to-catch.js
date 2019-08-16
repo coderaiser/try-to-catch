@@ -1,8 +1,7 @@
 'use strict';
 
 const {promisify} = require('util');
-const tryToTape = require('try-to-tape');
-const test = tryToTape(require('tape'));
+const test = require('supertape');
 const tryToCatch = require('..');
 
 test('try-to-catch: no args', (t) => {
