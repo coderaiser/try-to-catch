@@ -68,14 +68,6 @@ async function read(path) {
 }
 ```
 
-## Environments
-
-In old `node.js` environments that not fully supports `es2015`, `try-to-catch` can be used with:
-
-```js
-var tryToCatch = require('try-to-catch/legacy');
-```
-
 ## Related
 
 - [try-catch](https://github.com/coderaiser/try-catch "try-catch") - functional try-catch wrapper.

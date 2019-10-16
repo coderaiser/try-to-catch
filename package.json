@@ -45,5 +45,8 @@
     "redrun": "^7.0.2",
     "supertape": "^1.2.3"
   },
+  "engines": {
+    "node": ">=4"
+  },
   "license": "MIT"
 }

@@ -8,9 +8,6 @@ module.exports = {
     "lint": () => 'putout lib test madrun.js',
     "fix:lint": () => run('lint', '--fix'),
     "coverage": () => 'nyc npm test',
-    "report": () => 'nyc report --reporter=text-lcov | coveralls',
-    "build": () => 'babel lib -d legacy',
-    "wisdom": () => run(['build', 'legacy']),
-    "legacy": () => 'echo "module.exports = require(\'./try-to-catch\')" > legacy/index.js'
+    "report": () => 'nyc report --reporter=text-lcov | coveralls'
 };
 
