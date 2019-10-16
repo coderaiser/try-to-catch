@@ -15,10 +15,7 @@
     "lint": "madrun lint",
     "fix:lint": "madrun fix:lint",
     "coverage": "madrun coverage",
-    "report": "madrun report",
-    "build": "madrun build",
-    "wisdom": "madrun wisdom",
-    "legacy": "madrun legacy"
+    "report": "madrun report"
   },
   "dependencies": {},
   "keywords": [
