@@ -20,8 +20,7 @@
     "wisdom": "madrun wisdom",
     "legacy": "madrun legacy"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "keywords": [
     "try",
     "catch",
@@ -38,7 +37,7 @@
     "@babel/preset-env": "^7.0.0",
     "coveralls": "^3.0.0",
     "eslint": "^6.1.0",
-    "madrun": "^2.5.0",
+    "madrun": "^3.0.6",
     "nodemon": "^1.14.12",
     "nyc": "^14.1.1",
     "putout": "^5.5.0",
