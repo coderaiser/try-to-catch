@@ -48,11 +48,8 @@ await tryToCatch(() => 5);
 Advanced example:
 
 ```js
-const fs = require('fs');
+const {readFile, readdir} = require('fs').promises;
 const tryToCatch = require('try-to-catch');
-const {promisify} = require('util');
-const readFile = promisify(fs.readFile);
-const readDir = promisify(fs.readdir);
 
 read(process.argv[2])
     .then(console.log)
@@ -67,7 +64,7 @@ async function read(path) {
     if (error.code !== 'EISDIR')
         return error;
     
-    return await readDir(path);
+    return await readdir(path);
 }
 ```
 
