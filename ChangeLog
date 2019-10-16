@@ -1,3 +1,13 @@
+2019.10.16, v2.0.0
+
+feature:
+- (package) putout v6.15.1
+- (package) madrun v3.0.6
+- (try-to-catch) drop support of node < 4
+- (package) nyc v14.1.1
+- (package) eslint v6.1.0
+
+
 2018.11.08, v1.1.1
 
 fix:
