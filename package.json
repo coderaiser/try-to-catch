@@ -1,6 +1,6 @@
 {
   "name": "try-to-catch",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "author": "coderaiser <mnemonic.enemy@gmail.com> (https://github.com/coderaiser)",
   "description": "function try-catch wrapper for promises",
   "homepage": "http://github.com/coderaiser/try-to-catch",
