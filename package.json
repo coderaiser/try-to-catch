@@ -34,15 +34,16 @@
     "@babel/preset-env": "^7.0.0",
     "coveralls": "^3.0.0",
     "eslint": "^6.1.0",
-    "madrun": "^3.0.6",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-putout": "^3.0.0",
+    "madrun": "^5.4.0",
     "nodemon": "^2.0.2",
     "nyc": "^15.0.0",
     "putout": "^7.3.4",
-    "redrun": "^7.0.2",
-    "supertape": "^1.2.3"
+    "supertape": "^1.2.4"
   },
   "engines": {
-    "node": ">=4"
+    "node": ">=6"
   },
   "license": "MIT"
 }
