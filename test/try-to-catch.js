@@ -4,10 +4,10 @@ const {promisify} = require('util');
 const test = require('supertape');
 const tryToCatch = require('..');
 
-test('try-to-catch: no args', (t) => {
-    const fn = () => tryToCatch();
+test('try-to-catch: no args', async (t) => {
+    const [e] = await tryToCatch(tryToCatch);
     
-    t.throws(fn, /fn should be a function!/, 'should throw');
+    t.equal(e.message, 'fn should be a function!', 'should throw');
     t.end();
 });
 

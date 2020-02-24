@@ -29,9 +29,6 @@
     "then"
   ],
   "devDependencies": {
-    "@babel/cli": "^7.0.0",
-    "@babel/core": "^7.0.0",
-    "@babel/preset-env": "^7.0.0",
     "coveralls": "^3.0.0",
     "eslint": "^6.1.0",
     "eslint-plugin-node": "^11.0.0",
