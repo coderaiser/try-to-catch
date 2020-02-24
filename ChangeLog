@@ -1,3 +1,9 @@
+2020.02.24, v3.0.0
+
+feature:
+- (try-to-catch) promise -> async
+
+
 2019.12.30, v2.0.1
 
 fix:
