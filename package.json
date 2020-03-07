@@ -9,6 +9,12 @@
     "type": "git",
     "url": "git://github.com/coderaiser/try-to-catch.git"
   },
+  "nyc": {
+    "exclude": [
+      "test",
+      ".*"
+    ]
+  },
   "scripts": {
     "test": "madrun test",
     "watch:test": "madrun watch:test",
