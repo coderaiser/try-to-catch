@@ -1,14 +1,11 @@
-# Try to Catch [![NPM version][NPMIMGURL]][NPMURL] [![Dependency Status][DependencyStatusIMGURL]][DependencyStatusURL] [![Build Status][BuildStatusIMGURL]][BuildStatusURL] [![Coverage Status][CoverageIMGURL]][CoverageURL]
+# Try to Catch [![NPM version][NPMIMGURL]][NPMURL] [![Build Status][BuildStatusIMGURL]][BuildStatusURL] [![Coverage Status][CoverageIMGURL]][CoverageURL]
 
-[NPMIMGURL]:                https://img.shields.io/npm/v/try-to-catch.svg?style=flat&longCache=true
-[BuildStatusIMGURL]:        https://img.shields.io/travis/coderaiser/try-to-catch/master.svg?style=flat&longCache=true
-[DependencyStatusIMGURL]:   https://img.shields.io/david/coderaiser/try-to-catch.svg?style=flat&longCache=true
-[NPMURL]:                   https://npmjs.org/package/try-to-catch "npm"
-[BuildStatusURL]:           https://travis-ci.org/coderaiser/try-to-catch  "Build Status"
-[DependencyStatusURL]:      https://david-dm.org/coderaiser/try-to-catch "Dependency Status"
-
-[CoverageURL]:              https://coveralls.io/github/coderaiser/try-to-catch?branch=master
-[CoverageIMGURL]:           https://coveralls.io/repos/coderaiser/try-to-catch/badge.svg?branch=master&service=github
+[NPMIMGURL]: https://img.shields.io/npm/v/try-to-catch.svg?style=flat&longCache=true
+[BuildStatusIMGURL]: https://img.shields.io/travis/coderaiser/try-to-catch/master.svg?style=flat&longCache=true
+[NPMURL]: https://npmjs.org/package/try-to-catch "npm"
+[BuildStatusURL]: https://travis-ci.org/coderaiser/try-to-catch "Build Status"
+[CoverageURL]: https://coveralls.io/github/coderaiser/try-to-catch?branch=master
+[CoverageIMGURL]: https://coveralls.io/repos/coderaiser/try-to-catch/badge.svg?branch=master&service=github
 
 Functional `try-catch` wrapper for `promises`.
 
@@ -33,7 +30,7 @@ const tryToCatch = require('try-to-catch');
 const reject = Promise.reject.bind(Promise);
 await tryToCatch(reject, 'hi');
 // returns
-[ Error: hi]
+// [ Error: hi]
 ```
 
 Can be used with functions:
@@ -42,13 +39,13 @@ Can be used with functions:
 const tryToCatch = require('try-to-catch');
 await tryToCatch(() => 5);
 // returns
-[null, 5]
+[null, 5];
 ```
 
 Advanced example:
 
 ```js
-const {readFile, readdir} = require('fs').promises;
+const {readFile, readdir} = require('fs/promises');
 const tryToCatch = require('try-to-catch');
 
 read(process.argv[2])
@@ -75,4 +72,3 @@ async function read(path) {
 ## License
 
 MIT
-
