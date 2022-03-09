@@ -17,7 +17,7 @@ test('try-to-catch: resolves', async (t) => {
     
     const [, result] = await tryToCatch(fn, message);
     
-    t.equal(result, message, 'should equal');
+    t.equal(result, message);
     t.end();
 });
 
@@ -27,7 +27,7 @@ test('try-to-catch: rejects', async (t) => {
     
     const [error] = await tryToCatch(fn, message);
     
-    t.equal(error, message, 'should equal');
+    t.equal(error, message);
     t.end();
 });
 
@@ -39,11 +39,11 @@ test('try-to-catch: rejects: not promise', async (t) => {
     
     const [error] = await tryToCatch(fn, message);
     
-    t.equal(error.message, message, 'should equal');
+    t.equal(error.message, message);
     t.end();
 });
 
-test('try-to-catch: resolves: not promise', async (t) => {
+test('try-to-catch: resolves: not promise: no error', async (t) => {
     const fn = () => {};
     const [error] = await tryToCatch(fn);
     
