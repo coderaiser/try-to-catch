@@ -19,8 +19,8 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
-      - name: Install Redrun, Lerna
-        run: npm i redrun lerna -g
+      - name: Install
+        run: npm i
       - name: Lint
         run: redrun fix:lint
       - name: Commit fixes
