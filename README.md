@@ -1,11 +1,11 @@
 # Try to Catch [![NPM version][NPMIMGURL]][NPMURL] [![Build Status][BuildStatusIMGURL]][BuildStatusURL] [![Coverage Status][CoverageIMGURL]][CoverageURL]
 
 [NPMIMGURL]: https://img.shields.io/npm/v/try-to-catch.svg?style=flat&longCache=true
-[BuildStatusIMGURL]: https://img.shields.io/travis/coderaiser/try-to-catch/master.svg?style=flat&longCache=true
 [NPMURL]: https://npmjs.org/package/try-to-catch "npm"
-[BuildStatusURL]: https://travis-ci.org/coderaiser/try-to-catch "Build Status"
 [CoverageURL]: https://coveralls.io/github/coderaiser/try-to-catch?branch=master
 [CoverageIMGURL]: https://coveralls.io/repos/coderaiser/try-to-catch/badge.svg?branch=master&service=github
+[BuildStatusURL]: https://github.com/coderaiser/putout/actions?query=workflow%3A%22Node+CI%22 "Build Status"
+[BuildStatusIMGURL]: https://github.com/coderaiser/putout/workflows/Node%20CI/badge.svg
 
 Functional `try-catch` wrapper for `promises`.
 
