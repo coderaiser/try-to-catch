@@ -4,8 +4,8 @@
 [NPMURL]: https://npmjs.org/package/try-to-catch "npm"
 [CoverageURL]: https://coveralls.io/github/coderaiser/try-to-catch?branch=master
 [CoverageIMGURL]: https://coveralls.io/repos/coderaiser/try-to-catch/badge.svg?branch=master&service=github
-[BuildStatusURL]: https://github.com/coderaiser/putout/actions?query=workflow%3A%22Node+CI%22 "Build Status"
-[BuildStatusIMGURL]: https://github.com/coderaiser/putout/workflows/Node%20CI/badge.svg
+[BuildStatusURL]: https://github.com/coderaiser/try-to-catch/actions?query=workflow%3A%22Node+CI%22 "Build Status"
+[BuildStatusIMGURL]: https://github.com/coderaiser/try-to-catch/workflows/Node%20CI/badge.svg
 
 Functional `try-catch` wrapper for `promises`.
 
