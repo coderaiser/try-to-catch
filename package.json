@@ -33,7 +33,7 @@
     "coveralls": "^3.0.0",
     "eslint": "^8.10.0",
     "eslint-plugin-node": "^11.0.0",
-    "eslint-plugin-putout": "^14.4.0",
+    "eslint-plugin-putout": "^15.1.1",
     "madrun": "^9.0.0",
     "nodemon": "^2.0.2",
     "nyc": "^15.0.0",
