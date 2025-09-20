@@ -26,7 +26,7 @@ Wrap function to avoid `try-catch` block, resolves `[error, result]`;
 Simplest example with `async-await`:
 
 ```js
-const tryToCatch = require('try-to-catch');
+import tryToCatch from 'try-to-catch';
 const reject = Promise.reject.bind(Promise);
 await tryToCatch(reject, 'hi');
 // returns
@@ -36,7 +36,7 @@ await tryToCatch(reject, 'hi');
 Can be used with functions:
 
 ```js
-const tryToCatch = require('try-to-catch');
+import tryToCatch from 'try-to-catch';
 await tryToCatch(() => 5);
 // returns
 [null, 5];
@@ -45,12 +45,17 @@ await tryToCatch(() => 5);
 Advanced example:
 
 ```js
-const {readFile, readdir} = require('fs/promises');
-const tryToCatch = require('try-to-catch');
+import {readFile, readdir} = from 'node:fs/promises';
+import tryToCatch from 'try-to-catch';
 
-read(process.argv[2])
-    .then(console.log)
-    .catch(console.error);
+const [error, data] = await tryToCatch(read, process.argv[2]);
+
+if (error) {
+    console.error(error);
+    process.exit(1);
+}
+
+console.log(data);
 
 async function read(path) {
     const [error, data] = await tryToCatch(readFile, path, 'utf8');
