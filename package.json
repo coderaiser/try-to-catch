@@ -49,7 +49,7 @@
     "supertape": "^11.5.1"
   },
   "engines": {
-    "node": ">=6"
+    "node": ">=20"
   },
   "license": "MIT"
 }
