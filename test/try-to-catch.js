@@ -72,4 +72,3 @@ test('try-to-catch: nested', async (t) => {
     t.equal(data, 5, 'should not be error');
     t.end();
 });
-
