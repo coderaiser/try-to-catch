@@ -30,7 +30,7 @@
     "then"
   ],
   "devDependencies": {
-    "c8": "^7.11.2",
+    "c8": "^10.1.3",
     "eslint": "^8.10.0",
     "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-putout": "^15.1.1",
