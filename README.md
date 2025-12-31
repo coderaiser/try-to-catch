@@ -27,6 +27,7 @@ Simplest example with `async-await`:
 
 ```js
 import tryToCatch from 'try-to-catch';
+
 const reject = Promise.reject.bind(Promise);
 await tryToCatch(reject, 'hi');
 // returns
@@ -37,6 +38,7 @@ Can be used with functions:
 
 ```js
 import tryToCatch from 'try-to-catch';
+
 await tryToCatch(() => 5);
 // returns
 [null, 5];
@@ -45,7 +47,7 @@ await tryToCatch(() => 5);
 Advanced example:
 
 ```js
-import {readFile, readdir} = from 'node:fs/promises';
+import {readFile, readdir} from 'node:fs/promises';
 import tryToCatch from 'try-to-catch';
 
 const [error, data] = await tryToCatch(read, process.argv[2]);

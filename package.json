@@ -8,7 +8,7 @@
   "main": "lib/try-to-catch.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/coderaiser/try-to-catch.git"
+    "url": "git+https://github.com/coderaiser/try-to-catch.git"
   },
   "scripts": {
     "test": "madrun test",

@@ -1,6 +1,6 @@
 'use strict';
 
-const {promisify} = require('util');
+const {promisify} = require('node:util');
 const test = require('supertape');
 const tryToCatch = require('..');
 
@@ -66,4 +66,3 @@ test('try-to-catch: resolves: promisify', async (t) => {
     t.equal(data, 3, 'should not be error');
     t.end();
 });
-
