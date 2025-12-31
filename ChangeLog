@@ -1,3 +1,17 @@
+2025.12.31, v4.0.0
+
+feature:
+- 3a97714 try-to-catch: drop support of node < 20
+- d0914ef try-to-catch: migrate to ESM
+- 9334dd0 try-to-catch: supertape v11.5.1
+- 8c8adee try-to-catch: putout v41.2.3
+- 93096f9 try-to-catch: nodemon v3.1.11
+- 1923ff6 try-to-catch: madrun v11.0.6
+- 3b0c5da try-to-catch: eslint-plugin-putout v29.2.0
+- 0955a6c try-to-catch: eslint v9.39.2
+- bca7769 try-to-catch: c8 v10.1.3
+- be385bd (package) eslint-plugin-putout v15.1.1
+
 2022.03.09, v3.0.1
 
 feature:
