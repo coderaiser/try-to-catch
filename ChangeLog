@@ -1,3 +1,8 @@
+2025.12.31, v4.0.1
+
+fix:
+- cdfd2b3 try-to-catch: ERR_REQUIRE_CYCLE_MODULE
+
 2025.12.31, v4.0.0
 
 feature:
