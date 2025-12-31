@@ -37,7 +37,7 @@ await tryToCatch(reject, 'hi');
 Can be used with functions:
 
 ```js
-import tryToCatch from 'try-to-catch';
+import {tryToCatch} from 'try-to-catch';
 
 await tryToCatch(() => 5);
 // returns
@@ -48,7 +48,7 @@ Advanced example:
 
 ```js
 import {readFile, readdir} from 'node:fs/promises';
-import tryToCatch from 'try-to-catch';
+import {tryToCatch} from 'try-to-catch';
 
 const [error, data] = await tryToCatch(read, process.argv[2]);
 

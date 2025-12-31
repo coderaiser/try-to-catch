@@ -1,11 +1,20 @@
 {
   "name": "try-to-catch",
   "version": "3.0.1",
-  "type": "commonjs",
+  "type": "module",
   "author": "coderaiser <mnemonic.enemy@gmail.com> (https://github.com/coderaiser)",
   "description": "function try-catch wrapper for promises",
   "homepage": "http://github.com/coderaiser/try-to-catch",
-  "main": "lib/try-to-catch.js",
+  "main": "lib/try-to-catch.cjs",
+  "exports": {
+    ".": {
+      "node": {
+        "require": "./lib/try-to-catch.cjs",
+        "import": "./lib/try-to-catch.js"
+      },
+      "default": "./lib/try-to-catch.cjs"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/coderaiser/try-to-catch.git"

@@ -1,15 +1,17 @@
-import {promisify} from 'node:util';
-import test from 'supertape';
-import {tryToCatch} from 'try-to-catch';
+'use strict';
 
-test('try-to-catch: no args', async (t) => {
+const {promisify} = require('node:util');
+const test = require('supertape');
+const {tryToCatch} = require('try-to-catch');
+
+test('try-to-catch: cjs: no args', async (t) => {
     const [e] = await tryToCatch(tryToCatch);
     
     t.equal(e.message, 'fn should be a function!', 'should throw');
     t.end();
 });
 
-test('try-to-catch: resolves', async (t) => {
+test('try-to-catch: cjs: resolves', async (t) => {
     const message = 'hello';
     const fn = (a) => Promise.resolve(a);
     
@@ -19,7 +21,7 @@ test('try-to-catch: resolves', async (t) => {
     t.end();
 });
 
-test('try-to-catch: rejects', async (t) => {
+test('try-to-catch: cjs: rejects', async (t) => {
     const message = 'hello';
     const fn = (a) => Promise.reject(a);
     
@@ -29,7 +31,7 @@ test('try-to-catch: rejects', async (t) => {
     t.end();
 });
 
-test('try-to-catch: rejects: not promise', async (t) => {
+test('try-to-catch: cjs: rejects: not promise', async (t) => {
     const message = 'hello';
     const fn = (a) => {
         throw Error(a);
@@ -41,7 +43,7 @@ test('try-to-catch: rejects: not promise', async (t) => {
     t.end();
 });
 
-test('try-to-catch: resolves: not promise: no error', async (t) => {
+test('try-to-catch: cjs: resolves: not promise: no error', async (t) => {
     const fn = () => {};
     const [error] = await tryToCatch(fn);
     
@@ -49,7 +51,7 @@ test('try-to-catch: resolves: not promise: no error', async (t) => {
     t.end();
 });
 
-test('try-to-catch: resolves: not promise', async (t) => {
+test('try-to-catch: cjs: resolves: not promise', async (t) => {
     const fn = () => 5;
     const [, data] = await tryToCatch(fn);
     
@@ -57,7 +59,7 @@ test('try-to-catch: resolves: not promise', async (t) => {
     t.end();
 });
 
-test('try-to-catch: resolves: promisify', async (t) => {
+test('try-to-catch: cjs: resolves: promisify', async (t) => {
     const fn = promisify((a, b, fn) => fn(null, a + b));
     const [, data] = await tryToCatch(fn, 1, 2);
     
@@ -65,11 +67,9 @@ test('try-to-catch: resolves: promisify', async (t) => {
     t.end();
 });
 
-test('try-to-catch: nested', async (t) => {
-    const fn = () => 5;
-    const [, data] = await tryToCatch.tryToCatch(fn);
+test('try-to-catch: cjs: nested', async (t) => {
+    const [e] = await tryToCatch.tryToCatch(tryToCatch);
     
-    t.equal(data, 5, 'should not be error');
+    t.equal(e.message, 'fn should be a function!', 'should throw');
     t.end();
 });
-
