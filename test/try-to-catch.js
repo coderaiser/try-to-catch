@@ -1,6 +1,6 @@
 import {promisify} from 'node:util';
 import test from 'supertape';
-import tryToCatchDefault, {tryToCatch} from 'try-to-catch';
+import {tryToCatch} from 'try-to-catch';
 
 test('try-to-catch: no args', async (t) => {
     const [e] = await tryToCatch(tryToCatch);
@@ -67,7 +67,7 @@ test('try-to-catch: resolves: promisify', async (t) => {
 
 test('try-to-catch: nested', async (t) => {
     const fn = () => 5;
-    const [, data] = await tryToCatchDefault(fn);
+    const [, data] = await tryToCatch.tryToCatch(fn);
     
     t.equal(data, 5, 'should not be error');
     t.end();
