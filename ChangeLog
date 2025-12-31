@@ -1,3 +1,9 @@
+2025.12.31, v4.0.2
+
+fix:
+- 53e1028 try-to-catch: drop support of node < 22
+- 9e77c4f try-to-catch: revert ERR_REQUIRE_CYCLE_MODULE
+
 2025.12.31, v4.0.1
 
 fix:
