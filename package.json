@@ -8,11 +8,8 @@
   "main": "lib/try-to-catch.cjs",
   "exports": {
     ".": {
-      "node": {
-        "require": "./lib/try-to-catch.cjs",
-        "import": "./lib/try-to-catch.js"
-      },
-      "default": "./lib/try-to-catch.cjs"
+      "require": "./lib/try-to-catch.cjs",
+      "import": "./lib/try-to-catch.js"
     }
   },
   "repository": {
