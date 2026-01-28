@@ -64,11 +64,3 @@ test('try-to-catch: resolves: promisify', async (t) => {
     t.equal(data, 3, 'should not be error');
     t.end();
 });
-
-test('try-to-catch: nested', async (t) => {
-    const fn = () => 5;
-    const [, data] = await tryToCatch.tryToCatch(fn);
-    
-    t.equal(data, 5, 'should not be error');
-    t.end();
-});

@@ -5,12 +5,9 @@
   "author": "coderaiser <mnemonic.enemy@gmail.com> (https://github.com/coderaiser)",
   "description": "function try-catch wrapper for promises",
   "homepage": "http://github.com/coderaiser/try-to-catch",
-  "main": "lib/try-to-catch.cjs",
+  "main": "lib/try-to-catch.js",
   "exports": {
-    ".": {
-      "require": "./lib/try-to-catch.cjs",
-      "import": "./lib/try-to-catch.js"
-    }
+    ".": "./lib/try-to-catch.js"
   },
   "repository": {
     "type": "git",

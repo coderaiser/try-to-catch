@@ -26,7 +26,7 @@ Wrap function to avoid `try-catch` block, resolves `[error, result]`;
 Simplest example with `async-await`:
 
 ```js
-import tryToCatch from 'try-to-catch';
+import {tryToCatch} from 'try-to-catch';
 
 const reject = Promise.reject.bind(Promise);
 await tryToCatch(reject, 'hi');
