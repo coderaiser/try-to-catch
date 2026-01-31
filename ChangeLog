@@ -1,3 +1,8 @@
+2026.01.31, v4.0.5
+
+fix:
+- 027bf9d try-to-catch: rm bun.lock
+
 2026.01.28, v4.0.4
 
 feature:
