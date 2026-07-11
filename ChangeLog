@@ -1,3 +1,17 @@
+2026.07.11, v4.1.0
+
+feature:
+- d157e68 try-to-catch: supertape v13.4.1
+- 82b3b89 try-to-catch: putout v42.8.0
+- cd141bf try-to-catch: madrun v13.0.3
+- 44d78b9 try-to-catch: eslint-plugin-putout v31.2.0
+- 77ad9e7 try-to-catch: superc8 v12.7.0
+- b2a1c3c try-to-catch: add types
+- 5e8a718 try-to-catch: supertape v12.5.0
+- aae8015 try-to-catch: madrun v12.1.3
+- 0f35aa3 try-to-catch: eslint-plugin-putout v30.0.3
+- c9d36e2 try-to-catch: eslint v10.0.0
+
 2026.01.31, v4.0.5
 
 fix:
