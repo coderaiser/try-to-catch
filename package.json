@@ -43,7 +43,7 @@
     "nodemon": "^3.1.11",
     "putout": "^42.8.0",
     "superc8": "^12.7.0",
-    "supertape": "^12.5.0"
+    "supertape": "^13.4.1"
   },
   "engines": {
     "node": ">=22"
