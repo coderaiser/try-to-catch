@@ -1,6 +1,7 @@
 import {run} from 'madrun';
 
 export default {
+    'wisdom': () => run(['lint', 'coverage', 'test:dts']),
     'test': () => `tape 'test/*.{js,cjs}'`,
     'test:dts': () => 'check-dts test/*.ts',
     'watch:test': async () => await run('watcher', `"${await run('test')}"`),

@@ -14,6 +14,7 @@
     "url": "git+https://github.com/coderaiser/try-to-catch.git"
   },
   "scripts": {
+    "wisdom": "madrun wisdom",
     "test": "madrun test",
     "test:dts": "madrun test:dts",
     "watch:test": "madrun watch:test",
