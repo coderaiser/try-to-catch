@@ -35,7 +35,6 @@
     "then"
   ],
   "devDependencies": {
-    "c8": "^10.1.3",
     "check-dts": "^1.0.0",
     "eslint": "^10.0.0",
     "eslint-plugin-node": "^11.0.0",
@@ -43,6 +42,7 @@
     "madrun": "^12.1.3",
     "nodemon": "^3.1.11",
     "putout": "^41.2.3",
+    "superc8": "^12.7.0",
     "supertape": "^12.5.0"
   },
   "engines": {
